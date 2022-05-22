@@ -1,0 +1,35 @@
+.fondo {
+    /* background: linear-gradient(252deg, #fc5c7d, #6a82fb);
+    background-size: 400% 400%; */
+    background-image: url('img-pet.jpg');
+
+    -webkit-animation: easyturno 3s ease infinite;
+    -moz-animation: easyturno 3s ease infinite;
+    animation: easyturno 3s ease infinite;
+}
+
+@-webkit-keyframes easyturno {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@-moz-keyframes easyturno {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+@keyframes easyturno {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 26%}
+    100%{background-position:0% 75%}
+}
+
+
+.alert{
+
+    font-size: 2em;
+    margin: 0.67em 0;
+
+
+   }
+   
