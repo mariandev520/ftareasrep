@@ -243,7 +243,10 @@ app.post("/events", (req, res) => {
       case "box2":
         id="a0ju6u8pbrigc5kvatj9os3n4s@group.calendar.google.com";
       break;
-  
+
+      case "box3":
+        id="66hajem1ofailoacv78fmo4j0k@group.calendar.google.com"
+
     default:
       break;
 
