@@ -17,19 +17,16 @@
     "express": "^4.17.1",
     "express-validation": "^3.0.6",
     "googleapis": "^66.0.0",
+    "heroku": "^7.60.2",
     "js-alert": "^1.0.4",
     "node-datetime": "^2.1.2",
     "node-json2html": "^1.4.0",
     "nodemailer": "^6.4.16",
     "nodemon": "^2.0.3",
-   
     "sendgrid": "^5.2.3"
-   
   },
   "scripts": {
     "start": "node src/server.js"
-   
-    
   },
   "author": "",
   "license": "ISC"
