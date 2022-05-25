@@ -231,9 +231,28 @@ app.post("/events", (req, res) => {
 
 
     
- 
+ function testeando () {
     
     
+  let id;
+
+  switch (`${req.body.seleccion}`){
+    case "box1":
+       id="ha6r8iir4ru848caj4nf3cte3c@group.calendar.google.com";
+      break;
+      case "box2":
+        id="a0ju6u8pbrigc5kvatj9os3n4s@group.calendar.google.com";
+      break;
+  
+    default:
+      break;
+
+
+  }
+  return id;
+
+
+}
   
 
 
@@ -254,6 +273,10 @@ app.post("/events", (req, res) => {
     },
   };
 
+
+
+
+  
 
   async function funcionando() {
 
@@ -276,6 +299,10 @@ app.post("/events", (req, res) => {
   }, 2500);
 
   }
+
+  
+  
+
   // Check if we a busy and have an event on our calendar for the same time.
   calendar.freebusy.query(
     {
@@ -293,16 +320,16 @@ app.post("/events", (req, res) => {
       const eventArr = res.data.calendars.primary.busy;
 
       // Check if event array is empty which means we are not busy
-      if (eventArr.length === 0 && finDeEvento2>diadehoy ) {
+      if (eventArr.length === 0 && finDeEvento2>diadehoy) {
         // If we are not busy create a new calendar event.
         return calendar.events.insert(
-          { calendarId: "primary", resource: event },
+          { calendarId: testeando(), resource: event },
           (err) => {
             // Check for errors and log them if they exist.
             if (err)
               return console.error("Error Creating Calender Event:", err);
             // Si esta todo ok envia el evento
-            return enviarmail()+funcionando();
+            return funcionando();
           }
         );
       }
@@ -348,7 +375,7 @@ app.post("/events", (req, res) => {
         console.error(error);
       });
 
-  
+
   }
 });
 

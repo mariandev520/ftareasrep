@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calander</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylessheet" href="../css/fondo.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+<!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+</head>
+
+
+
+
+<body class="bg-gray-300">
+
+
+<!-- component -->
+<div class="h-screen md:flex">
+	<div
+		class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-green-400 to-black i justify-around items-center hidden">
+		<div>
+			<h1 class="text-white font-bold text-4xl font-sans">FULLTIMEGROUP</h1>
+			<p class="text-white mt-1">TRADE MARKETING</p>
+			<button type="submit" class="block w-28 bg-white text-green-800 mt-4 py-2 rounded-2xl font-bold mb-2">Mejor Es Mas</button>
+		</div>
+		<div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+	</div>
+	<div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
+		<form class="bg-white" 
+    action="http://localhost:3000/events"
+    method="POST" >
+			<h1 class="text-gray-800 font-bold text-2xl mb-1">Calendario Tareas diarias Merchandising</h1>
+			<p class="text-sm font-normal text-gray-600 mb-7">Bienvenido (recuerda trata como te gusta que te traten)</p>
+			<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+					fill="currentColor">
+					<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+						clip-rule="evenodd" />
+				</svg>
+				<input  required="required" class="pl-2 outline-none border-none" type="text" name="summary" placeholder="Empresa" />
+      </div>
+				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+						viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+					</svg>
+					<input   for="nombre" required="required"  name="summary1" class="pl-2 outline-none border-none" type="text"  placeholder="Nombre de Supervisor" />
+      </div>
+					<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+						</svg>
+						<input  required="required"  type="email"
+            name="to" class="pl-2 outline-none border-none" type="text"    for="attendee email" name="description" id="" placeholder="Email" />
+      </div>
+						<div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+									clip-rule="evenodd" />
+							</svg>
+          
+							<input  required="required" class="pl-2 outline-none border-none" type="text" name="seleccion"  placeholder="Seleccione repositor " />
+              <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+                
+                </div>
+
+                <select  name="seleccion"  >
+                  <option name="seleccion"  value="box1">Cristian Villagra</option>
+                  <option value="box2">Marcelo Carcar</option>
+                  <option  value="box3">Yago Alonso</option>
+                  <option value=""></option>
+                  <option  value=""></option>
+              </select>
+              </div>
+              
+             
+
+              <label
+              class="block text-gray-700 text-sm font-bold mb-2 pt-4"
+              for="grid-state">
+            <p class="text-gray-400  ..." >Fecha
+
+            </p> 
+          </label>
+          <input
+              class="block appearance-none w-full bg-white border border-gray-400
+              hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight
+              focus:outline-none focus:shadow-outline input text-gray-700"
+              name="eventStartTime"
+              type="date"
+              value={eventStartTime}
+              onChange={obtenerInformacion}
+          />
+         
+                    
+
+
+
+                    <button   type="submit" class="block w-full bg-green-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2" onclick="
+
+                    Swal.fire('Por Favor Complete todos los campos'),
+                                                            
+                                                          Swal.fire({
+                                                            title: 'Buscando Turno....',
+                                                            html: 'horario disponible <b></b> minutos libres.',
+                                                            timer: 5000,
+                                                            timerProgressBar: true,
+                                                            didOpen: () => {
+                                                              Swal.showLoading()
+                                                              timerInterval = setInterval(() => {
+                                                                const content = Swal.getContent()
+                                                                if (content) {
+                                                                  const b = content.querySelector('b')
+                                                                  if (b) {
+                                                                    b.textContent = Swal.getTimerLeft()
+                                                                  }
+                                                                }
+                                                              }, 100)
+                                                            },
+                                                            willClose: () => {
+                                                              clearInterval(timerInterval)
+                                                            }
+                                                          }).then((result) => {
+                                                            /* Read more about handling dismissals below */
+                                                            if (result.dismiss === Swal.DismissReason.timer) {
+                                                              console.log('I was closed by the timer')
+                                                            }
+                                                          
+                                                          })
+                                                        
+                                                        
+                                                          
+                                                      "
+                                                            > Enviar Solicitud</button>
+                    <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">Ayuda </span>
+        
+              
+        </div>
+</div>
+                     
+         
+                    
+                 
+
+                  </div>
+              </div>
+  
+            </form>
+	</div>
+</div>
+                    </div>
+                            
+                         
+                        </form>
+
+                        
+                                                </div>
+                                                    
+                                
+            </div>
+        </div>
+    </div>
+    <!-- component -->
+<!-- footer -->
+<footer class="bg-white w-full py-6 px-4"><!-- marging just for display-->
+    
+    <div class="flex items-center justify-between my-4">
+        <p class="text-blue-500">Todos los Derechos Reservados</p>
+        <p class="inline-flex text-blue-500 px-2 pt-6"> 
+            <!--<svg fill="#e53e3e" viewBox="0 0 24 24"  class="w-5 h-5 mx-1 pt-px text-red-600" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>--> <p class="text-blue-500"link="www.lamdev.com.ar">Desarrollo LAMDEV.COM.AR ©2022</p></p>
+        <div  class="flex items-center">
+            <button >
+                <div  class="w-5  w-5 mr-6 bg-center-top ">
+                      
+                      <a  href="https://api.whatsapp.com/send?phone=5491160325056" target="_blank">
+                      <img  src="../css/whatsapp.png"></img>
+                      </a>
+                      <a class="text-green-700 text-opacity-100" ></a>
+                      </div>
+                      
+                      </button>
+            <a href="">
+                <svg class="h-6 w-6 fill-current text-blue-600 mr-6" viewBox="0 0 512 512">
+                    <path d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"/>
+                </svg>
+            </a>
+            <a href="">
+                <svg fill="none"  class="h-6 w-6 text-blue-600 mr-6" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+            </a>
+           
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+</html>
+<script>
