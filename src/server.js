@@ -246,6 +246,11 @@ app.post("/events", (req, res) => {
 
       case "box3":
         id="66hajem1ofailoacv78fmo4j0k@group.calendar.google.com"
+        break;
+      case "box4":
+        id="cgf80nqbv4st1d6fo95gr9eu9g@group.calendar.google.com";
+      break;
+
 
     default:
       break;
@@ -286,7 +291,7 @@ app.post("/events", (req, res) => {
      
     const timeout = setTimeout(() => {
     
-      const jojo =  res.redirect('http://localhost:3000/views/events.html');
+      const jojo =  res.redirect('https://tareasft.herokuapp.com/views/events.html');
   
     }, 300);
   
@@ -297,7 +302,7 @@ app.post("/events", (req, res) => {
      
   const timeoutObj = setTimeout(() => {
   
-    const pepe =  res.redirect('http://localhost:3000/views/nohaylugar.html');
+    const pepe =  res.redirect('https://tareasft.herokuapp.com/views/nohaylugar.html');
 
   }, 2500);
 
